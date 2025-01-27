@@ -565,41 +565,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayCard:
   - id: 0
-    cardName: {fileID: 1002701595}
+    cardName: 
     cardHp: 0
     cost: 0
     power: 0
-    cardDescription: {fileID: 1356813748}
-  - id: 1
-    cardName: {fileID: 1002701595}
-    cardHp: 0
-    cost: 0
-    power: 0
-    cardDescription: {fileID: 1356813748}
-  - id: 2
-    cardName: {fileID: 1002701595}
-    cardHp: 0
-    cost: 0
-    power: 0
-    cardDescription: {fileID: 1356813748}
-  - id: 3
-    cardName: {fileID: 1002701595}
-    cardHp: 0
-    cost: 0
-    power: 0
-    cardDescription: {fileID: 1356813748}
-  - id: 4
-    cardName: {fileID: 1002701595}
-    cardHp: 0
-    cost: 0
-    power: 0
-    cardDescription: {fileID: 1356813748}
+    cardDescription: 
   displayId: 0
   id: 0
-  cardName: {fileID: 1002701595}
+  cardName: 
   cost: 0
   power: 0
-  cardDescription: {fileID: 1356813748}
+  cardDescription: 
   hp: 0
   nameText: {fileID: 1002701595}
   costText: {fileID: 199950742}

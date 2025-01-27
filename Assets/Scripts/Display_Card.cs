@@ -4,16 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using System;
 public class Display_Card : MonoBehaviour
 {
     public List<Card> displayCard = new List<Card>();
     public int displayId;
 
     public int id;
-    public TextMeshProUGUI cardName;
+    public string cardName;
     public int cost;
     public int power;
-    public TextMeshProUGUI cardDescription;
+    public String cardDescription;
     public int hp;
 
     public TextMeshProUGUI nameText;

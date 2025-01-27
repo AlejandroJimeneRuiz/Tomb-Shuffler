@@ -7,14 +7,14 @@ using UnityEngine;
 public class Card
 {
     public int id;
-    public TextMeshProUGUI cardName;
+    public string cardName;
     public int cardHp;
     public int cost;
     public int power;
-    public TextMeshProUGUI cardDescription;
+    public string cardDescription;
 
 
-    public Card(int Id, TextMeshProUGUI CardName, int CardHp, int Cost, int Power, TextMeshProUGUI CardDescription)
+    public Card(int Id, string CardName, int CardHp, int Cost, int Power, string CardDescription)
     {
         id = Id;
         cardName = CardName;
@@ -27,7 +27,4 @@ public class Card
 
     }
 
-    public Card(int v1, string v2, int v3, int v4, int v5, string v6)
-    {
-    }
 }
