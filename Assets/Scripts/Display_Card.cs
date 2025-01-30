@@ -16,12 +16,14 @@ public class Display_Card : MonoBehaviour
     public int power;
     public String cardDescription;
     public int hp;
+    public Sprite spriteImage;
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI costText;
     public TextMeshProUGUI powerText;
     public TextMeshProUGUI descriptionText;
     public TextMeshProUGUI hpText;
+    public Image artImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,11 +39,13 @@ public class Display_Card : MonoBehaviour
         power = displayCard[0].power;
         cardDescription = displayCard[0].cardDescription;
         hp = displayCard[0].cardHp;
+        spriteImage = displayCard[0].spriteImage;
     
         nameText.text = " " + cardName;
         costText.text = " " + cost;
         powerText.text = " " + power;
         descriptionText.text = " " + cardDescription;
         hpText.text = " " + hp;
+        artImage.sprite = spriteImage;
     }
 }
