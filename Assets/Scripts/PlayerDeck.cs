@@ -5,9 +5,10 @@ using UnityEngine;
 public class PlayerDeck : MonoBehaviour
 {
     public List<Card> deck = new List<Card>();
-    public List<Card> container = new List<Card>();
     public int x;
     public int deckSize;
+    public List<Card> container = new List<Card>();
+
     // Start is called before the first frame update
     void Start()
     {
