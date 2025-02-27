@@ -1,3 +1,2 @@
 # Tomb-Shuffler
- Juego de cartas basado en la mitología egipcia.
- 
+ Juego de cartas basado en la mitología egipcia
