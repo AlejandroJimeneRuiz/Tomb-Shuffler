@@ -32,7 +32,7 @@ public class PlayerDeck : MonoBehaviour
             int randomIndex = Random.Range(i, deckSize);
             deck[i] = deck[randomIndex];
             deck[randomIndex] = container[0];
-            Debug.Log("Deck Shuffled");
+
 
             }
 
