@@ -1,47 +1,61 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerDeck : MonoBehaviour
 {
-    public List<Card> deck = new List<Card>();
-    public List<Card> container = new List<Card>();
-    public int x;
-    public int deckSize;
-    // Start is called before the first frame update
+    public List<CardData> playerDeck = new List<CardData>();  // Mazo del jugador
+
     void Start()
     {
-        x = 0;
-
-        for(int i = 0; i < 40; i++)
-        {
-            x = Random.Range(1, 4);
-            deck[i] = Card_DataBase.cardList[x];
-
-        }
-
-
+        LoadPlayerDeck(); // Cargar mazo al iniciar
     }
 
-
-        public void Shuffle()
-        {
-            for(int i = 0; i < deckSize; i++)
-            {
-            container[0] = deck[i];
-            int randomIndex = Random.Range(i, deckSize);
-            deck[i] = deck[randomIndex];
-            deck[randomIndex] = container[0];
-            Debug.Log("Deck Shuffled");
-
-            }
-
-
-        }
-
-    // Update is called once per frame
-    void Update()
+    void LoadPlayerDeck()
     {
-        
+        Card_DataBase cardDatabase = FindObjectOfType<Card_DataBase>(); // Buscar el objeto en la escena
+
+        if (cardDatabase != null)
+        {
+            // Añadir algunas cartas al mazo del jugador
+            playerDeck.Add(cardDatabase.GetCardByName("Fireball"));
+            playerDeck.Add(cardDatabase.GetCardByName("Goblin"));
+            playerDeck.Add(cardDatabase.GetCardByName("Knight"));
+
+            Debug.Log("Mazo del jugador cargado con " + playerDeck.Count + " cartas.");
+        }
+        else
+        {
+            Debug.LogError("No se encontró el Card_DataBase en la escena.");
+        }
+    }
+
+    public void AddCardToDeck(string cardName)
+    {
+        Card_DataBase cardDatabase = FindObjectOfType<Card_DataBase>();
+
+        if (cardDatabase != null)
+        {
+            CardData newCard = cardDatabase.GetCardByName(cardName);
+
+            if (newCard != null)
+            {
+                playerDeck.Add(newCard);
+                Debug.Log("Se agregó la carta: " + cardName);
+            }
+            else
+            {
+                Debug.LogError("No se encontró la carta: " + cardName);
+            }
+        }
+    }
+
+    public void ShowDeck()
+    {
+        Debug.Log("Mazo del jugador:");
+        foreach (CardData card in playerDeck)
+        {
+            Debug.Log("- " + card.cardName);
+        }
     }
 }
+
