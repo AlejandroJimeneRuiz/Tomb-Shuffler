@@ -9,6 +9,12 @@ public class PlayerDeck : MonoBehaviour
     public int deckSize;
     public List<Card> container = new List<Card>();
 
+    public GameObject DrawPileCard1;
+    public GameObject DrawPileCard2;
+    public GameObject DrawPileCard3;
+    public GameObject DrawPileCard4;
+    public GameObject DrawPileCard5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +49,25 @@ public class PlayerDeck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(deckSize < 40)
+        {
+            DrawPileCard1.SetActive(false);
+        }
+        if(deckSize < 30)
+        {
+            DrawPileCard2.SetActive(false);
+        }
+        if(deckSize < 20)
+        {
+            DrawPileCard3.SetActive(false);
+        }
+        if(deckSize < 10)
+        {
+            DrawPileCard4.SetActive(false);
+        }
+        if(deckSize < 1)
+        {
+            DrawPileCard5.SetActive(false);
+        }
     }
 }
