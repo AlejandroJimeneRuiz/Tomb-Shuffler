@@ -24,10 +24,21 @@ public class Display_Card : MonoBehaviour
     public TextMeshProUGUI descriptionText;
     public TextMeshProUGUI hpText;
     public Image artImage;
+
+    public GameObject Hand;
+    public int numberOfCardsInDeck;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        numberOfCardsInDeck = PlayerDeck.deckSize;
+        
+
         displayCard[0] = Card_DataBase.cardList[displayId];
+
+        
+
     }
 
     // Update is called once per frame
@@ -47,5 +58,14 @@ public class Display_Card : MonoBehaviour
         descriptionText.text = " " + cardDescription;
         hpText.text = " " + hp;
         artImage.sprite = spriteImage;
+
+        Hand = GameObject.Find("Hand");
+        if (this.tag == "Clone")
+        {
+            displayCard[0] = PlayerDeck.staticDeck[numberOfCardsInDeck -1];
+            numberOfCardsInDeck-= 1;
+            PlayerDeck.deckSize -= 1;
+            this.tag = "Untagged";
+        }
     }
 }
