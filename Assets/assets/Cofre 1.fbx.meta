@@ -1,0 +1,459 @@
+fileFormatVersion: 2
+guid: 282b32c312b0b3942a1768e852574dee
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Battered_Stud_01
+    second: {fileID: 2100000, guid: 006381e98c26a3f4a8c4fc6d7cfd976c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brass_Upper_Lid_01
+    second: {fileID: 2100000, guid: f045cdeb2cdd1324892883a6413c5074, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crate_Edge_01
+    second: {fileID: 2100000, guid: 8cc08e9fef3172b49afd223de01c35f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Decorative_Edge_Brace_01
+    second: {fileID: 2100000, guid: 67770bfca4cf9014b8cda7088a27cd83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hinge_Mat_01
+    second: {fileID: 2100000, guid: 0145b217f5dfdb649a734498ffe76f8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hinge_Plate_01
+    second: {fileID: 2100000, guid: 89f3cca542f846941b28e7329e4ad9c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hinge_Studs_01
+    second: {fileID: 2100000, guid: 3200bd0ee6cba354ba5fc1bd5409a46b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kist_Corner_01
+    second: {fileID: 2100000, guid: 9c04e3edca8df1b41a4a99035b78e7b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LR_Padlock_01
+    second: {fileID: 2100000, guid: 6c9c71a0bd75012439a949a38fccc416, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LR_Padlock_02
+    second: {fileID: 2100000, guid: 456df95489aadb445b9d9a8857c6ccad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lower_Hinge_01
+    second: {fileID: 2100000, guid: f20eb872a383059479adae0337e9da19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Square_Stud_01
+    second: {fileID: 2100000, guid: 3224b22d554a32d4e875bed12f8e8d40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Upper_Crate_Edge_01
+    second: {fileID: 2100000, guid: c2f1485c7165e154fb0a635e41b2b783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Crate_01
+    second: {fileID: 2100000, guid: b449772fe3f881c45b8db0caa6e463de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Lid_01
+    second: {fileID: 2100000, guid: cad7ca478f4bfba47ab5f5ede57dbb76, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Battered_Stud_01_color
+    second: {fileID: 2800000, guid: 5f70a2e443f80514db7921364fba5277, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Battered_Stud_01_metallic
+    second: {fileID: 2800000, guid: dac353abb343c13469a6002ef94eee99, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Battered_Stud_01_normal
+    second: {fileID: 2800000, guid: 7ff3efe7828cebd44a8163e5a2bc2fa7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Battered_Stud_01_roughness
+    second: {fileID: 2800000, guid: 38f6e824c0db4754d9b596248fa2550a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Crate_Upper_Border_02_color
+    second: {fileID: 2800000, guid: b84cc2a9e23f8044395f9f5b4c926902, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Crate_Upper_Border_02_metallic
+    second: {fileID: 2800000, guid: d2142d334e6c11b4a99c0baef842ad7b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Crate_Upper_Border_02_normal
+    second: {fileID: 2800000, guid: 8abdde6aef391aa4c82da7ef256e860f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Crate_Upper_Border_02_roughness
+    second: {fileID: 2800000, guid: 2dafcba41d15b8541a5ff13de434849a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hinge_Plate_01_color
+    second: {fileID: 2800000, guid: 35ee875f823da9947bd4cac974e4d86b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hinge_Plate_01_metallic
+    second: {fileID: 2800000, guid: 908dcee90d60e9e4a84f00e62ade6f00, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hinge_Plate_01_normal
+    second: {fileID: 2800000, guid: bd40bc7a81591434dbe4231863082d8a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hinge_Plate_01_roughness
+    second: {fileID: 2800000, guid: 984b0e07cc9d9e9459a84d773bbc5a9d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kist_Strap_01_color
+    second: {fileID: 2800000, guid: e8a64666c64357c4d96513ce51ba7301, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kist_Strap_01_metallic
+    second: {fileID: 2800000, guid: a8e44edf62e6e9b4d907b65467701b1d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kist_Strap_01_normal
+    second: {fileID: 2800000, guid: 94d199f01fcee4145b9780ea880f4dd2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kist_Strap_01_roughness
+    second: {fileID: 2800000, guid: 4558fb58954ac9d4bbdf49a750f47424, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Crate_Edge_01_color
+    second: {fileID: 2800000, guid: d7673267a6aaa154bbe4fa14a1419566, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Crate_Edge_01_metallic
+    second: {fileID: 2800000, guid: f937110c7b433004fb0668c395599ccc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Crate_Edge_01_normal
+    second: {fileID: 2800000, guid: 8e24906dd244b0f45b7b2ad50a3cef69, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Crate_Edge_01_roughness
+    second: {fileID: 2800000, guid: 7ea435e21759af44dbd7e71b9912d785, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Hinge_01_color
+    second: {fileID: 2800000, guid: 0598d809195d8044ab517396089d61e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Hinge_01_metallic
+    second: {fileID: 2800000, guid: 8c7668d069e52214bb5d4fd36dbf1352, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Hinge_01_normal
+    second: {fileID: 2800000, guid: 261b5fe757f5ef14a9a14c640b27d889, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Hinge_01_roughness
+    second: {fileID: 2800000, guid: e6403f905ec4aca4ca487aa0107b7b84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Kist_Corner_01_metallic
+    second: {fileID: 2800000, guid: 5bfe3d47c7632dd4c8d79f0407aa4f37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Kist_Corner_01_normal
+    second: {fileID: 2800000, guid: 2a482791f40fdd14895e68a5cb9940a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Kist_Corner_01_roughness
+    second: {fileID: 2800000, guid: 34f5f612444f1dd4191af6bb4b619583, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Lid_02_color
+    second: {fileID: 2800000, guid: 698a826d53609534b9a61fcfad28a5ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Lid_02_metallic
+    second: {fileID: 2800000, guid: 849ccafac42867c48bb4e9e4bd12ac9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Lid_02_normal
+    second: {fileID: 2800000, guid: 750b8d64ba657d941a7172d4eef711e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Lid_02_roughness
+    second: {fileID: 2800000, guid: 6051c465e805e5b4092893e45f28d6d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Padlock_02_color
+    second: {fileID: 2800000, guid: 9cdddacbe4e35104d8b72b98310561fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Padlock_02_metallic
+    second: {fileID: 2800000, guid: d5ec52fb6b2dccf478c1456d9b699f72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Padlock_02_normal
+    second: {fileID: 2800000, guid: 63f15fab6b7437a449d7f57c1c917ebb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LR_Padlock_02_roughness
+    second: {fileID: 2800000, guid: 44e19cc4136f5e340b9e2bb2f28d7c9a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lower_Hinge_01_color
+    second: {fileID: 2800000, guid: a9c0a61bcf665c14fa9f4afa969c78d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lower_Hinge_01_metallic
+    second: {fileID: 2800000, guid: a045d78dce540404cabaf894637ef822, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lower_Hinge_01_normal
+    second: {fileID: 2800000, guid: d032aa987f75e654ea8303865fecd266, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lower_Hinge_01_roughness
+    second: {fileID: 2800000, guid: 6e77a4bbc93410745b7f9c0b240dcf3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Square_Stud_01_color
+    second: {fileID: 2800000, guid: ee7b40264d58dde498eb7a65c991ab8f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Square_Stud_01_metallic
+    second: {fileID: 2800000, guid: 49c98b948cd0ae341856ff5d7677935d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Square_Stud_01_normal
+    second: {fileID: 2800000, guid: d3e308b498c127a4582a84bc61bf462c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Square_Stud_01_roughness
+    second: {fileID: 2800000, guid: ce5e727452caec34193fe9822f90372a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Torus_color
+    second: {fileID: 2800000, guid: 6e84cafa207f04d499a7b67cf9503f90, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Torus_metallic
+    second: {fileID: 2800000, guid: 60799685251e696409ed10f1e493429d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Torus_normal
+    second: {fileID: 2800000, guid: 6348cc38e77032245b21abe64392bd6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Torus_roughness
+    second: {fileID: 2800000, guid: 69beba030e875e642894dd61e209f1ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Crate_01_color
+    second: {fileID: 2800000, guid: 07d47e2d9ae340142a9e6995d9e3882c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Crate_01_metallic
+    second: {fileID: 2800000, guid: 7bd6b6a614728de429b67620a37c36c9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Crate_01_normal
+    second: {fileID: 2800000, guid: 4f0acdbbacb4865488c8c42ca47ff0af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Crate_01_roughness
+    second: {fileID: 2800000, guid: 36c3de17d0360cd4e87cabbb809da31c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Lid_01_color
+    second: {fileID: 2800000, guid: 16cd2cb19a744ad409f00780662b10d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Lid_01_metallic
+    second: {fileID: 2800000, guid: e622770c41b3c4a4aa961aeb6026e405, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Lid_01_normal
+    second: {fileID: 2800000, guid: 22a4d49799e836946bdd463ec30c877e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Lid_01_roughness
+    second: {fileID: 2800000, guid: 4ee8f4d1dd8c059438296d441fb5b5ef, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
