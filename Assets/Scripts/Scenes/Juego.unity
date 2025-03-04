@@ -1633,8 +1633,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -399.5}
-  m_SizeDelta: {x: -100, y: -801}
+  m_AnchoredPosition: {x: 165.58495, y: -399.5}
+  m_SizeDelta: {x: -431.17014, y: -801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434448176
 MonoBehaviour:
@@ -1649,7 +1649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8962264, g: 0.72219974, b: 0, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1688,8 +1688,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1478776563}
   lines:
-  - hola
-  - adios
+  - "Buenas, soy conocido de Octavio.Me hab\xEDa escrito una carta diciendo que habia
+    encontrado algo y que me encontrara con un tal Felix. Debes de ser t\xFA"
+  - "\xBFC\xF3nocido de Octavio? No sabia que Octaviose relacionar\xEDa con mucha
+    m\xE1s gente que nuestro circulo de amigos"
+  - "Nos conocimos en una expedici\xF3n hace poco. Pero bueno, volvamos al tema principal,
+    abrir la puerta y encontrar a Octavio."
   textSpeed: 0.05
   isTyping: 1
   isInRange: 1
@@ -1727,8 +1731,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 41.02}
+  m_SizeDelta: {x: 588.5, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478776563
 MonoBehaviour:
