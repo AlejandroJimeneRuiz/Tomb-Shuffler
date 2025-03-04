@@ -80,6 +80,13 @@ public class PlayerDeck : MonoBehaviour
         {
             DrawPileCard5.SetActive(false);
         }
+
+        if (TurnSystem.drawCard == true)
+        {
+            StartCoroutine(Draw(1));
+            TurnSystem.drawCard = false;
+        }
+
     }
 
     IEnumerator StartGame()
@@ -93,6 +100,15 @@ public class PlayerDeck : MonoBehaviour
             yield return new WaitForSeconds(1);
             Vector3 cardPosition = startPosition + new Vector3(i * offset, 0, 0); // Adjust the x position
             Instantiate(CardToHand, cardPosition, Hand.transform.rotation);
+        }
+    }
+
+    IEnumerator Draw(int x)
+    {
+        for (int i = 0; i < x; i++)
+        {
+            yield return new WaitForSeconds(1);
+            Instantiate(CardToHand, Hand.transform.position, Hand.transform.rotation);
         }
     }
 }
