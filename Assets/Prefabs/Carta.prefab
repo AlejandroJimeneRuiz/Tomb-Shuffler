@@ -1,73 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &101711019177646727
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3501924473373651070}
-  - component: {fileID: 7079967168734278093}
-  - component: {fileID: 835634797818411366}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3501924473373651070
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101711019177646727}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.0068000006, y: 5.9604643e-10, z: 0.02319}
-  m_LocalScale: {x: 0.009999997, y: 0.009999997, z: 0.01}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4075694022591483260}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7079967168734278093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101711019177646727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!114 &835634797818411366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101711019177646727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!1 &394460406988659984
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,7 +12,7 @@ GameObject:
   - component: {fileID: 7815529706349358367}
   - component: {fileID: 331924980129110562}
   m_Layer: 0
-  m_Name: Card Description
+  m_Name: 'CardDescription '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,7 +282,7 @@ GameObject:
   - component: {fileID: 802040618246369576}
   - component: {fileID: 2952833646517938244}
   m_Layer: 0
-  m_Name: Card Name
+  m_Name: CardName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -984,9 +916,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 092936ed7e402c041bcc79f8dad2d109, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8136974286500989432}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 092936ed7e402c041bcc79f8dad2d109, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3501924473373651070}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 092936ed7e402c041bcc79f8dad2d109, type: 3}
       insertIndex: -1
@@ -1006,29 +935,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3730131345248081862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bebebf1da91bc5e4b83e01d1cb602e46, type: 3}
+  m_Script: {fileID: 11500000, guid: fe457f754cf9a17478a007e4d5168a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayCard:
-  - id: 0
-    cardName: 
-    cardHp: 0
-    cost: 0
-    power: 0
-    cardDescription: 
-    spriteImage: {fileID: 0}
-  displayId: 0
-  id: 0
-  cardName: 
-  cost: 0
-  power: 0
-  cardDescription: 
-  hp: 0
-  spriteImage: {fileID: 0}
-  nameText: {fileID: 2952833646517938244}
-  costText: {fileID: 7283523468519583743}
+  cardNameText: {fileID: 2952833646517938244}
+  cardDescriptionText: {fileID: 331924980129110562}
   powerText: {fileID: 4045862816651626786}
-  descriptionText: {fileID: 331924980129110562}
+  costText: {fileID: 7283523468519583743}
   hpText: {fileID: 1315871747700979505}
   artImage: {fileID: 8640441240674080177}
 --- !u!4 &4075694022591483260 stripped
