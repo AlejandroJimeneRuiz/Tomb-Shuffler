@@ -64,6 +64,7 @@ public class DialogueScript : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            index = 0;
         }
     }
 }

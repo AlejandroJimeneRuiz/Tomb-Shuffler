@@ -1683,20 +1683,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1434448174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ded34eb5346bec948bf4249981f92a76, type: 3}
+  m_Script: {fileID: 11500000, guid: 1670dd641006b58469b36d827ff85d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1478776563}
   lines:
-  - "Buenas, soy conocido de Octavio.Me hab\xEDa escrito una carta diciendo que habia
-    encontrado algo y que me encontrara con un tal Felix. Debes de ser t\xFA"
-  - "\xBFC\xF3nocido de Octavio? No sabia que Octaviose relacionar\xEDa con mucha
-    m\xE1s gente que nuestro circulo de amigos"
-  - "Nos conocimos en una expedici\xF3n hace poco. Pero bueno, volvamos al tema principal,
-    abrir la puerta y encontrar a Octavio."
+  - 
+  - Hola
+  - Esto
+  - 'Es '
+  - Una Prueba
+  - 
   textSpeed: 0.05
-  isTyping: 1
-  isInRange: 1
 --- !u!1 &1478776561
 GameObject:
   m_ObjectHideFlags: 0
