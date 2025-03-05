@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Shuffle : MonoBehaviour
+public class ObjectToButton : MonoBehaviour
 {
 
     public GameObject definedButton;
