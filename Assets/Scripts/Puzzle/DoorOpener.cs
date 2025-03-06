@@ -1,43 +1,58 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorOpener : MonoBehaviour
 {
     public GameObject[] doors; // Array de puertas (puedes agregar más puertas aquí)
-    private bool isOpen = false; // Indica si las puertas están abiertas
+    private bool[] isOpen; // Estado de apertura para cada puerta
+
+    // Constante para el ángulo de rotación en sentido antihorario
+    private const float OpenAngleCounterClockwise = -90f;  // Abre en sentido antihorario
+    private const float ClosedAngle = 0f;
+
+    void Start()
+    {
+        // Inicializa el estado de apertura para cada puerta
+        isOpen = new bool[doors.Length];
+        for (int i = 0; i < doors.Length; i++)
+        {
+            isOpen[i] = false;
+        }
+    }
 
     public void OpenDoors()
     {
-        // Si las puertas están cerradas, las abre
-        if (!isOpen)
+        for (int i = 0; i < doors.Length; i++)
         {
-            foreach (GameObject door in doors)
+            GameObject door = doors[i];
+
+            if (!isOpen[i])
             {
-                // Rota cada puerta 90 grados en la dirección correcta
-                if (door.name.Contains("Left")) // Verifica si el nombre de la puerta contiene "Left"
-                {
-                    door.transform.Rotate(0, -90, 0); // Rota hacia la izquierda
-                }
-                else
-                {
-                    door.transform.Rotate(0, 90, 0); // Rota hacia la derecha
-                }
+                OpenDoor(door, i);
             }
-            isOpen = true;
-            Debug.Log("Las puertas se han abierto.");
+            else
+            {
+                CloseDoor(door, i);
+            }
         }
-        // Si las puertas están abiertas, las cierra
-        else
+    }
+
+    private void OpenDoor(GameObject door, int index)
+    {
+        // Ambas puertas giran en sentido antihorario
+        if (door.name.Contains("D") || door.name.Contains("i"))
         {
-            foreach (GameObject door in doors)
-            {
-                door.transform.Rotate(0, 0, 0); // Restablece la rotación
-            }
-            isOpen = false;
-            Debug.Log("Las puertas se han cerrado.");
+            door.transform.rotation = Quaternion.Euler(0, 0, OpenAngleCounterClockwise);
         }
+        isOpen[index] = true;
+        Debug.Log("La puerta " + door.name + " se ha abierto con rotación: " + door.transform.eulerAngles);
+    }
+
+    private void CloseDoor(GameObject door, int index)
+    {
+        door.transform.rotation = Quaternion.Euler(0, 0, ClosedAngle);
+        isOpen[index] = false;
+        Debug.Log("La puerta " + door.name + " se ha cerrado.");
     }
 }
