@@ -26,12 +26,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931187319789901380}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.79999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1969342496551949100}
+  m_Father: {fileID: 374027367515079524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &288003292141717946
 MeshFilter:
@@ -114,7 +114,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4533838666448071183}
   m_Father: {fileID: 1969342496551949100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &630154690315345533
@@ -224,7 +225,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4533838666448071183}
   - {fileID: 374027367515079524}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -293,6 +293,7 @@ MonoBehaviour:
   movementSpeed: 3
   sensitivity: {x: 1, y: 1}
   camera: {fileID: 374027367515079524}
+  jumpForce: 5
 --- !u!82 &7156324885733635090
 AudioSource:
   m_ObjectHideFlags: 0
