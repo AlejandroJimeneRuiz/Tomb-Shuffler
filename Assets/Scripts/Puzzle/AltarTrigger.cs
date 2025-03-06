@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using TMPro;
-using System.Collections;
 
 public class AltarTrigger : MonoBehaviour
 {
@@ -11,7 +10,6 @@ public class AltarTrigger : MonoBehaviour
         "Press E to rotate",
         "Press F to move"
     };
-    private bool mostrandoDialogo = false;
 
     void Start()
     {
@@ -24,9 +22,12 @@ public class AltarTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !mostrandoDialogo)
+        if (other.CompareTag("Player"))
         {
-            StartCoroutine(MostrarDialogo());
+            // Mostrar el texto completo cuando el jugador entra en el trigger
+            string dialogoCompleto = string.Join("\n", dialogos);
+            textoDialogo.text = dialogoCompleto;
+            textoDialogo.gameObject.SetActive(true);
         }
     }
 
@@ -34,27 +35,8 @@ public class AltarTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Ocultar el texto si el jugador sale del trigger
-            if (textoDialogo.gameObject.activeSelf)
-            {
-                textoDialogo.gameObject.SetActive(false);
-            }
+            // Ocultar el texto cuando el jugador sale del trigger
+            textoDialogo.gameObject.SetActive(false);
         }
-    }
-
-    IEnumerator MostrarDialogo()
-    {
-        mostrandoDialogo = true;
-        textoDialogo.gameObject.SetActive(true);
-
-        foreach (string linea in dialogos)
-        {
-            textoDialogo.text = linea;
-            yield return new WaitForSeconds(2f);
-        }
-
-        textoDialogo.gameObject.SetActive(false);
-        mostrandoDialogo = false;
     }
 }
-
