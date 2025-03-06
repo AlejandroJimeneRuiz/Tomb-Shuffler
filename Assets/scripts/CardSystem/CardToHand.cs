@@ -19,6 +19,6 @@ public class CardToHand : MonoBehaviour
         Hand = GameObject.Find("Hand");
         HandCard.transform.SetParent(Hand.transform);
         HandCard.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-
+        HandCard.transform.eulerAngles = new Vector3(25, 0, 0);
     }
 }
