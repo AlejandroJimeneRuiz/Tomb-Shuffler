@@ -20,7 +20,7 @@ public class PuzzleSolver : MonoBehaviour
     {
         if (IsPuzzleSolved())
         {
-            doorOpener.OpenDoor();
+            doorOpener.OpenDoors();
             this.enabled = false; // Desactiva este script para evitar múltiples aperturas
         }
     }

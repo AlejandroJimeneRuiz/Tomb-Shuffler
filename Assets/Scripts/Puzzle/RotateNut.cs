@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotateNut : MonoBehaviour
 {
     private int currentRotation = 0;
-    public int requiredRotation = 0; // Rotación requerida para resolver el puzzle
+    private int requiredRotation = 0; // Rotación requerida para resolver el puzzle
 
     public void Rotate90Degrees()
     {
@@ -24,5 +24,10 @@ public class RotateNut : MonoBehaviour
     public void SetRequiredRotation(int rotation)
     {
         requiredRotation = rotation % 4; // Asegura que el valor esté entre 0 y 3
+    }
+
+    public int GetRequiredRotation()
+    {
+        return requiredRotation;
     }
 }
