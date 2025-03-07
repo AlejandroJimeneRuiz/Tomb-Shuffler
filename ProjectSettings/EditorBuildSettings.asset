@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Juego.unity
     guid: d89f6501f6bf8884eb7265bf0b46a4b3
+  - enabled: 1
+    path: Assets/Scenes/Templo Interior.unity
+    guid: 6fbd265cd613e64449993d048effdde6
+  - enabled: 1
+    path: Assets/Scenes/JuegoPuzzle.unity
+    guid: bbae68305e92fe44e95dc2b109132847
   - enabled: 0
     path: Assets/Scenes/Pausa.unity
     guid: 192a5cd5869bdd4479af8b2efc14390d
