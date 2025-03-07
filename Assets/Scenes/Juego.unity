@@ -2532,11 +2532,11 @@ PrefabInstance:
     - target: {fileID: 2545222984301281371, guid: 4222d7fcbebe8ca47a52c94bf7d577a0, type: 3}
       propertyPath: doors.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 255836173}
     - target: {fileID: 2545222984301281371, guid: 4222d7fcbebe8ca47a52c94bf7d577a0, type: 3}
       propertyPath: doors.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 366539867}
     - target: {fileID: 4243082260451498666, guid: 4222d7fcbebe8ca47a52c94bf7d577a0, type: 3}
       propertyPath: m_Name
       value: Doors
@@ -3363,7 +3363,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6731723151898194103, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.019
+      value: 4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: -6731723151898194103, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -6731723151898194103, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -6731723151898194103, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -6731723151898194103, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -4903639232223156907, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3911,6 +3927,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8778636954393314542, guid: 55aa648a61f55824bbd1521ff86e59ec, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778636954393314542, guid: 55aa648a61f55824bbd1521ff86e59ec, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
