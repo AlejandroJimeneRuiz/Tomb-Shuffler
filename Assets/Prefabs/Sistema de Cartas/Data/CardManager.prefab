@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3475857518442228541
+--- !u!1 &1186130000992402112
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 930643682452477759}
-  - component: {fileID: 5524850905810905931}
+  - component: {fileID: 1505714531273877557}
+  - component: {fileID: 5090448101674468989}
+  - component: {fileID: 4755238954242301992}
   m_Layer: 0
-  m_Name: PlayerDeck
+  m_Name: CardManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &930643682452477759
+--- !u!4 &1505714531273877557
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475857518442228541}
+  m_GameObject: {fileID: 1186130000992402112}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.032945268, y: -0.067535795, z: -2.9357355}
@@ -32,13 +33,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5524850905810905931
+--- !u!114 &5090448101674468989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475857518442228541}
+  m_GameObject: {fileID: 1186130000992402112}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76ecea44b35653c44b4627fac47aded4, type: 3}
@@ -326,3 +327,45 @@ MonoBehaviour:
     cardDescription: 
     spriteImage: {fileID: 0}
   x: 0
+  container:
+  - id: 0
+    cardName: 
+    cardHp: 0
+    cost: 0
+    power: 0
+    cardDescription: 
+    spriteImage: {fileID: 0}
+  DrawPileCard1: {fileID: 0}
+  DrawPileCard2: {fileID: 0}
+  DrawPileCard3: {fileID: 0}
+  DrawPileCard4: {fileID: 0}
+  DrawPileCard5: {fileID: 0}
+  CardToHand: {fileID: 4600575054510834480, guid: ebd1cff4bef6273499c25e53262b86cf, type: 3}
+  Clones: []
+  Hand: {fileID: 0}
+--- !u!114 &4755238954242301992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186130000992402112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814b09c71a335c44291869e869d8ae04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 8330684809988207669, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+  cardSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  slotButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  buttonPanel: {fileID: 0}

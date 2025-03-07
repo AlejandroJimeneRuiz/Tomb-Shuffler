@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3082016418997530161}
   - component: {fileID: 6637046682613890753}
   - component: {fileID: 1480840205283443092}
+  - component: {fileID: 1993768614449949169}
   m_Layer: 0
   m_Name: V3CardToHand
   m_TagString: Clone
@@ -84,7 +85,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1480840205283443092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +103,27 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!65 &1993768614449949169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600575054510834480}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.94285995, y: 0.5170649, z: 0.015634086}
+  m_Center: {x: -0.000013886308, y: -0.009654686, z: 0.13513938}
 --- !u!1001 &5374025637346693666
 PrefabInstance:
   m_ObjectHideFlags: 0
