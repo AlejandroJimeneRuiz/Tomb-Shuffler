@@ -408,6 +408,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020000007, y: 0.0101263365, z: 0.0013105265}
   m_Center: {x: -1.6273918e-10, y: -0.0047342665, z: -0.00014857712}
+--- !u!114 &255836181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255836173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3ab08d0433efd46a22ae3d7f000b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreEscena: Juego cofre llave
+  distanciaMaxima: 1.5
+  jugador: {fileID: 0}
 --- !u!1 &280313922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7969016226402880051, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
@@ -486,6 +501,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020000007, y: 0.010126336, z: 0.0013105262}
   m_Center: {x: -3.728577e-10, y: -0.004734266, z: -0.00014857714}
+--- !u!114 &366539872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366539867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3ab08d0433efd46a22ae3d7f000b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreEscena: Juego cofre llave
+  distanciaMaxima: 4
+  jugador: {fileID: 0}
 --- !u!1 &369219306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7624594149938851320, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
@@ -3709,9 +3739,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8758208264750242092, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 255836177}
+    - targetCorrespondingSourceObject: {fileID: -8758208264750242092, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 255836181}
     - targetCorrespondingSourceObject: {fileID: -4971063263180566121, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 366539871}
+    - targetCorrespondingSourceObject: {fileID: -4971063263180566121, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 366539872}
     - targetCorrespondingSourceObject: {fileID: 6878487801611302190, guid: f3280b12b530ea34ebe633b38031a92c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1764035452}

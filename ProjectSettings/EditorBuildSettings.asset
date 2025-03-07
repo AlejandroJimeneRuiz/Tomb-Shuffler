@@ -7,11 +7,14 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/CardGame Table  Test Scene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: 5ca2fce6daa3af449b84cafbc2e1986a
   - enabled: 1
-    path: Assets/Scenes/Juego.unity
-    guid: 93977fcb277b32f47880eef79e694241
+    path: Assets/Scenes/Juego cofre carta.unity
+    guid: bbae68305e92fe44e95dc2b109132847
   - enabled: 1
-    path: Assets/Scenes/Pausa.unity
-    guid: 192a5cd5869bdd4479af8b2efc14390d
+    path: Assets/Scenes/Biblioteca cartas.unity
+    guid: 698e7437fd99caf4d9a2dd991d8bbdb4
+  - enabled: 1
+    path: Assets/Scenes/Juego cofre llave.unity
+    guid: 6fbd265cd613e64449993d048effdde6
   m_configObjects: {}
