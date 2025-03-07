@@ -57,13 +57,16 @@ public class TurnSystem : MonoBehaviour {
         manaText.text = "Mana: " + currentMana;
     }
 
-    public void PlayCard(Card card) {
+    public bool PlayCard(Card card) {
         if (card.cost <= currentMana) {
             currentMana -= card.cost;
             Debug.Log("Played card: " + card.cardName);
-            // Add logic to apply card effects here
+            UpdateUI(); // Update the UI after playing the card
+
+            return true; // Card played successfully
         } else {
             Debug.Log("Not enough mana to play this card!");
+            return false; // Not enough mana
         }
     }
 

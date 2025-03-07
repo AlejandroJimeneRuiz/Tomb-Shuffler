@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CardPlacement : MonoBehaviour
+public class CardPlacement : MonoBehaviour 
 {
+    private TurnSystem turnSystem; // Reference to the TurnSystem
     public GameObject cardPrefab; // Reference to the card prefab
     public GameObject canvas; // Reference to the Canvas with buttons
     public Button[] placementButtons; // Array of buttons for placement
@@ -13,6 +14,7 @@ public class CardPlacement : MonoBehaviour
 
     void Start()
     {
+        turnSystem = FindObjectOfType<TurnSystem>(); // Initialize TurnSystem reference
         // Hide the canvas at the start
         canvas.SetActive(false);
 
@@ -50,14 +52,30 @@ public class CardPlacement : MonoBehaviour
     void PlaceCard(Button button)
     {
         int index = System.Array.IndexOf(placementButtons, button); // Get the index of the button pressed
-        // Set the parent of the selected card to the corresponding slot, move it to the slot's position, change its tag to "Placed", match the slot's scale, and set its rotation
-        selectedCard.transform.SetParent(slots[index].transform);
-        selectedCard.transform.position = slots[index].transform.position; // Move the card to the slot's position
-        selectedCard.tag = "Placed"; // Change the tag to "Placed"
-        selectedCard.transform.localScale = new Vector3(slots[index].transform.localScale.x, slots[index].transform.localScale.y, -0.12f); // Match the scale of the slot and set Z to -0.12
-        selectedCard.transform.rotation = Quaternion.Euler(270, 180, 270); // Set the rotation to (270, 180, 270)
+        Display_Card displayCard = selectedCard.GetComponentInChildren<Display_Card>(); // Get the Display_Card component from the child
 
-        // Deactivate the canvas after placing the card
+
+        if (displayCard == null) // Check if the Display_Card component is null
+        {
+            Debug.LogError("Display_Card component is missing on the selected card!");
+            return; // Exit the method if the Display_Card is null
+        }
+
+        Card card = displayCard.displayCard[0]; // Access the Card object from the Display_Card
+        int cardCost = card.cost; // Access the cost from the Card object
+
+
+        if (turnSystem.PlayCard(card)) { // Check if the card can be played
+
+            selectedCard.transform.SetParent(slots[index].transform);
+            selectedCard.transform.position = slots[index].transform.position; // Move the card to the slot's position
+            selectedCard.tag = "Placed"; // Change the tag to "Placed"
+            selectedCard.transform.localScale = new Vector3(slots[index].transform.localScale.x, slots[index].transform.localScale.y, -0.12f); // Match the scale of the slot and set Z to -0.12
+            selectedCard.transform.rotation = Quaternion.Euler(270, 180, 270); // Set the rotation to (270, 180, 270)
+        } else {
+            Debug.Log("Not enough mana to place this card!"); // Log message if not enough mana
+        }
+
         canvas.SetActive(false);
     }
 
