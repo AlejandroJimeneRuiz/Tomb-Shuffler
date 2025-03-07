@@ -6,6 +6,7 @@ public class OpenChest : MonoBehaviour
 {
     public Animation chestAnimation;
     private bool playerNearby = false;
+    private bool hasOpened = false; // Nueva variable para evitar repetir la animación
 
     // Start is called before the first frame update
     void Start()
@@ -37,9 +38,10 @@ public class OpenChest : MonoBehaviour
     // Verifica si el jugador presiona "E" mientras está cerca
     void Update()
     {
-        if (playerNearby && Input.GetKeyDown(KeyCode.E))
+        if (playerNearby && Input.GetKeyDown(KeyCode.E) && !hasOpened)
         {
             chestAnimation.Play();
+            hasOpened = true; // Evita que se reproduzca nuevamente
         }
     }
 }

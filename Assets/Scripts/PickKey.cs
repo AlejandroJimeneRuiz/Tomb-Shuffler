@@ -11,12 +11,12 @@ public class PickKey : MonoBehaviour
     {
         if (doorcolliderhere == null)
         {
-            Debug.LogWarning("doorcolliderhere no está asignado. Asegúrate de asignarlo en el Inspector.");
+            Debug.LogWarning("doorcolliderhere no estï¿½ asignado. Asegï¿½rate de asignarlo en el Inspector.");
         }
 
         if (keygone == null)
         {
-            Debug.LogWarning("keygone no está asignado. Asegúrate de asignarlo en el Inspector.");
+            Debug.LogWarning("keygone no estï¿½ asignado. Asegï¿½rate de asignarlo en el Inspector.");
         }
     }
 
@@ -27,7 +27,7 @@ public class PickKey : MonoBehaviour
             if (doorcolliderhere != null)
             {
                 doorcolliderhere.GetComponent<BoxCollider>().enabled = true;
-                Debug.Log("La puerta ahora está desbloqueada.");
+                Debug.Log("La puerta ahora estï¿½ desbloqueada.");
             }
 
             if (keygone != null)
