@@ -1056,8 +1056,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoDialogo: {fileID: 9102015345518741363}
-  filePath: Assets/DialogoAltar.txt
-  textSpeed: 0.05
+  dialogos:
+  - Press F to stop move
+  - "Press \u2190 to select nut"
+  - Press E to rotate
+  - Press F to move
 --- !u!1 &8505275871411654337
 GameObject:
   m_ObjectHideFlags: 0
