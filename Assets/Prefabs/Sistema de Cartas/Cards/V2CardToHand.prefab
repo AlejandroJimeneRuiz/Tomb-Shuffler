@@ -864,9 +864,10 @@ GameObject:
   - component: {fileID: 3860888739881901057}
   - component: {fileID: 6106483558534382200}
   - component: {fileID: 8484330304124889239}
+  - component: {fileID: 7284200464881038390}
   m_Layer: 0
   m_Name: V2CardToHand
-  m_TagString: Untagged
+  m_TagString: Clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -973,3 +974,24 @@ MonoBehaviour:
   artImage: {fileID: 8640441240674080177, guid: 213c0ef559dfea24da1bdcbca146cdd4, type: 3}
   Hand: {fileID: 0}
   numberOfCardsInDeck: 35
+--- !u!65 &7284200464881038390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330684809988207669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.03625739, y: 0.02, z: 0.0009999999}
+  m_Center: {x: -0.008128695, y: 0, z: 0.00049999997}

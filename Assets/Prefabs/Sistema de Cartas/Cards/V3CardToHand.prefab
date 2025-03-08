@@ -85,7 +85,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1480840205283443092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,13 +132,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3904488236828064925}
     m_Modifications:
+    - target: {fileID: 1041857484255967871, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071626049277217495, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2125481930535394172, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2828465881133950963, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868077989434689813, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838472955228732378, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957966103400015371, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6106483558534382200, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
       propertyPath: m_SortingLayer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128942956204895292, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7902439609149324603, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
       propertyPath: m_LocalScale.x
@@ -195,6 +223,14 @@ PrefabInstance:
     - target: {fileID: 8330684809988207669, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
       propertyPath: m_Name
       value: V2CardToHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330684809988207669, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330684809988207669, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
+      propertyPath: m_TagString
+      value: CardDataLoad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
