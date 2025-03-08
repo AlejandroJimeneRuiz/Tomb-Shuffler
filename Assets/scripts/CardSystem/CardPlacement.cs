@@ -53,18 +53,9 @@ public class CardPlacement : MonoBehaviour
     {
         int index = System.Array.IndexOf(placementButtons, button); // Get the index of the button pressed
         Display_Card displayCard = selectedCard.GetComponentInChildren<Display_Card>(); // Get the Display_Card component from the child
-
-
-        if (displayCard == null) // Check if the Display_Card component is null
-        {
-            Debug.LogError("Display_Card component is missing on the selected card!");
-            return; // Exit the method if the Display_Card is null
-        }
-
         Card card = displayCard.displayCard[0]; // Access the Card object from the Display_Card
         int cardCost = card.cost; // Access the cost from the Card object
-
-
+        
         if (turnSystem.PlayCard(card)) { // Check if the card can be played
 
             selectedCard.transform.SetParent(slots[index].transform);
