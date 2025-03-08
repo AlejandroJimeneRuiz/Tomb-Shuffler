@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
  [System.Serializable]
 
-public class Card : MonoBehaviour
+public class Card
 {
     public int id;
     public string cardName;
