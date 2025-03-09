@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 8332066387723934039}
   - component: {fileID: 5282174881086345685}
   - component: {fileID: 7156324885733635090}
+  - component: {fileID: 761500102181963396}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -390,3 +391,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &761500102181963396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778636954393314542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10a21a512ebf4b4f94b1ef6ebbec283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepAudio: {fileID: 7156324885733635090}
+  footstepSounds:
+  - {fileID: 8300000, guid: 5102a092e78e80f40a95e0442381d936, type: 3}
+  rb: {fileID: 7702497842020888892}
+  stepInterval: 0.3
+  groundCheckDistance: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
