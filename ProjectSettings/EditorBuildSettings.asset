@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CardGame Table  Test Scene.unity
     guid: 5ca2fce6daa3af449b84cafbc2e1986a
   - enabled: 1
-    path: Assets/Scenes/Juego cofre carta.unity
+    path: Assets/Scenes/Juego.unity
     guid: d89f6501f6bf8884eb7265bf0b46a4b3
   - enabled: 1
     path: Assets/Scenes/Juego cofre llave.unity

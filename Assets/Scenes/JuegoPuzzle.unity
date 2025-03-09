@@ -455,11 +455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1136059924901706234, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.14
+      value: -9.140015
       objectReference: {fileID: 0}
     - target: {fileID: 1136059924901706234, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.94
+      value: 0.94000244
       objectReference: {fileID: 0}
     - target: {fileID: 1136059924901706234, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       propertyPath: m_LocalPosition.z
@@ -471,15 +471,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1136059924901706234, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1136059924901706234, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1136059924901706234, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1136059924901706234, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -501,38 +501,23 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6396042983252906263, guid: 8913271492232a143b189f3dc7eed882, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7548563706252818051, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 147043344}
+      addedObject: {fileID: 147043350}
     - targetCorrespondingSourceObject: {fileID: 7548563706252818051, guid: 8913271492232a143b189f3dc7eed882, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 147043343}
+      addedObject: {fileID: 147043344}
   m_SourcePrefab: {fileID: 100100000, guid: 8913271492232a143b189f3dc7eed882, type: 3}
 --- !u!1 &147043342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7548563706252818051, guid: 8913271492232a143b189f3dc7eed882, type: 3}
   m_PrefabInstance: {fileID: 147043341}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &147043343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147043342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3746832221faae741a98d0740c162c6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionText: Press E to Interact
-  onInteract:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!65 &147043344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -554,6 +539,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &147043350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147043342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6a60e5c68ad5c4eae72c0f924c982d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogo:
+  - buenas
+  - que tal
+  panelDialogo: {fileID: 688640064}
+  textoDialogo: {fileID: 0}
 --- !u!65 &158539002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -606,7 +608,6 @@ GameObject:
   m_Component:
   - component: {fileID: 205083692}
   - component: {fileID: 205083695}
-  - component: {fileID: 205083694}
   - component: {fileID: 205083693}
   m_Layer: 5
   m_Name: Card Panel
@@ -632,7 +633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 50, y: -4.9899597}
+  m_AnchoredPosition: {x: 50, y: -4.98999}
   m_SizeDelta: {x: -642.12976, y: 20.420063}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &205083693
@@ -665,23 +666,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &205083694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205083691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1670dd641006b58469b36d827ff85d2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 0}
-  lines:
-  - 
-  - hola
-  textSpeed: 0.05
 --- !u!222 &205083695
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1389,6 +1373,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.006001843, y: 0.006015722, z: 0.0060157212}
   m_Center: {x: -0.000045123394, y: -0.000009482673, z: 0.0030083493}
+--- !u!1 &688640064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7273328398535184851, guid: dadd7df73b439b549be12cf1c6e3b36c, type: 3}
+  m_PrefabInstance: {fileID: 2050717196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &701209812
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3221,7 +3210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3ab08d0433efd46a22ae3d7f000b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Templo Interior
+  nombreEscena: Juego cofre llave
   distanciaMaxima: 1.5
   jugador: {fileID: 0}
 --- !u!65 &1451216617
@@ -3934,6 +3923,10 @@ PrefabInstance:
     - target: {fileID: 6280758376508923632, guid: dadd7df73b439b549be12cf1c6e3b36c, type: 3}
       propertyPath: m_Name
       value: CanvasDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280758376508923632, guid: dadd7df73b439b549be12cf1c6e3b36c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
