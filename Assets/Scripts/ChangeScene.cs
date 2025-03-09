@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,10 +14,10 @@ public class ChangeScene : MonoBehaviour
 
 
 
-    void Start()
-    {
-        jugador = Camera.main.transform;
-    }
+        void Start()
+        {
+            jugador = Camera.main.transform;
+        }
 
     private void Update()
     {
