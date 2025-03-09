@@ -19,11 +19,12 @@ public class OpenDoor : MonoBehaviour
     // Update is called once per frame
     void OnTriggerStay()
     {
-        if (Input.GetKey(KeyCode.E) && !hasPlayed) 
+        if (Input.GetKey(KeyCode.E) && !hasPlayed)
         {
             door.Play();
             hasPlayed = true; // Marcar la animación como reproducida
         }
     }
 }
+
 

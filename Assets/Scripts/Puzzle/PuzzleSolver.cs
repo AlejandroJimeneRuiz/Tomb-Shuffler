@@ -1,39 +1,52 @@
-using System.Collections;
+锘縰sing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PuzzleSolver : MonoBehaviour
 {
-    public RotateNut[] nuts; // Array de tuercas
-    public int[] requiredRotations; // N鷐ero de giros necesarios para cada tuerca
-    public DoorOpener doorOpener; // Referencia al script de la puerta
+    public Animation doorAnimation; // Asigna la animaci贸n de la puerta en el Inspector
+    public AudioSource doorSound; // 馃攰 Asigna el sonido de la puerta
+
+    private bool hasOpened = false;
 
     void Start()
     {
-        for (int i = 0; i < nuts.Length; i++)
+        // Asegur茅monos de que las referencias est茅n asignadas correctamente
+        if (doorSound == null)
         {
-            nuts[i].SetRequiredRotation(requiredRotations[i]);
+            Debug.LogError("No se ha asignado el AudioSource de la puerta.");
+        }
+
+        if (doorAnimation == null)
+        {
+            Debug.LogError("No se ha asignado la animaci贸n de la puerta.");
         }
     }
 
-    void Update()
+    public void OpenDoors()
     {
-        if (IsPuzzleSolved())
+        // Verifica que no se haya abierto ya
+        if (!hasOpened)
         {
-            doorOpener.OpenDoors();
-            this.enabled = false; // Desactiva este script para evitar m鷏tiples aperturas
-        }
-    }
+            // Reproducir la animaci贸n de la puerta
+            doorAnimation.Play(); // 馃帴 Reproducir animaci贸n de la puerta
+            Debug.Log("Animaci贸n de puerta iniciada.");
 
-    bool IsPuzzleSolved()
-    {
-        for (int i = 0; i < nuts.Length; i++)
-        {
-            if (nuts[i].GetCurrentRotation() != requiredRotations[i])
+            // Reproducir el sonido de la puerta si est谩 asignado
+            if (doorSound != null)
             {
-                return false;
+                doorSound.Play(); // 馃攰 Reproducir sonido de la puerta
+                Debug.Log("Sonido de puerta reproducido.");
             }
+            else
+            {
+                Debug.LogWarning("No se ha asignado el sonido de la puerta.");
+            }
+
+            // Marcar que la puerta ya se abri贸
+            hasOpened = true;
         }
-        return true;
     }
 }
+
+
