@@ -9,6 +9,9 @@ TagManager:
   - Dead
   - CardDataLoad
   - EnemyDead
+  - PlayerDead
+  - EnemyCard
+  - EnemyCardPlaced
   layers:
   - Default
   - TransparentFX
