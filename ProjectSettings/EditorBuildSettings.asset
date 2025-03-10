@@ -9,15 +9,36 @@ EditorBuildSettings:
     path: Assets/Scenes/CardGame Table  Test Scene.unity
     guid: 5ca2fce6daa3af449b84cafbc2e1986a
   - enabled: 1
-    path: Assets/Scenes/Juego.unity
-    guid: d89f6501f6bf8884eb7265bf0b46a4b3
-  - enabled: 1
     path: Assets/Scenes/Juego cofre llave.unity
     guid: 6fbd265cd613e64449993d048effdde6
   - enabled: 1
     path: Assets/Scenes/JuegoPuzzle.unity
     guid: bbae68305e92fe44e95dc2b109132847
-  - enabled: 0
-    path: Assets/Scenes/Pausa.unity
-    guid: 192a5cd5869bdd4479af8b2efc14390d
+  - enabled: 1
+    path: Assets/Scenes/Biblioteca cartas.unity
+    guid: 698e7437fd99caf4d9a2dd991d8bbdb4
+  - enabled: 1
+    path: Assets/Scenes/Cart Test.unity
+    guid: 0090e4b0805922546ab8dc8d590a1d38
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: 47f33d62022118044a5dcc9ec5b87024
+  - enabled: 1
+    path: Assets/Scenes/Dialogo.unity
+    guid: 4fc33d515d9c36e40b654f180fc4d247
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 9b1556b0e4ceeca44bffeab6d0aa0a4f
+  - enabled: 1
+    path: "Assets/Scenes/Movimiento e Interacci\xF3n4.unity"
+    guid: 2b99f1a5690d31242940e64052c89928
+  - enabled: 1
+    path: Assets/Scenes/PruiebaLlavePuerta.unity
+    guid: bed572adb109add4496ad4562a4bc7b5
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: f6d2754b9087c7944b72763989b4b583
+  - enabled: 1
+    path: Assets/Scenes/Victoria.unity
+    guid: 4c0f599a0c6f0034dbc7251a21d4cd77
   m_configObjects: {}

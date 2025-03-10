@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Clone
+  - Ground
+  - Grounded
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
   - Placed
   - Dead
   - CardDataLoad
@@ -16,7 +22,6 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
   - Water
   - UI
   - 

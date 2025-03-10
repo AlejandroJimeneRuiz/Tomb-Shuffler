@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     private new Rigidbody rigidbody;
     public float movementSpeed;
     public Vector2 sensitivity;
     public new Transform camera; 
     public float jumpForce = 5f; 
-    private bool isGrounded;
+    public bool isGrounded;
 
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        isGrounded = true;
     }
-    private void UptdateMovement()
+    
+    private void UpdateMovement()
     {
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical");
@@ -37,10 +39,11 @@ public class NewBehaviourScript : MonoBehaviour
         {
             rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false; 
+            Debug.Log("Jump");
         }
     }
 
-    private void UptateMouse()
+    private void UpdateMouse()
     {
         float hor = Input.GetAxis("Mouse X");
         float ver = Input.GetAxis("Mouse Y");
@@ -58,23 +61,20 @@ public class NewBehaviourScript : MonoBehaviour
             else if (rotation.x < 300 && rotation.x > 180) { rotation.x = 300; }
 
             camera.localEulerAngles = rotation;
-
         }
     }
 
     void Update()
     {
-        UptdateMovement();
-        UptateMouse();
+        UpdateMovement();
+        UpdateMouse();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground")) 
+        if (collision.gameObject.CompareTag("Grounded")) 
         {
             isGrounded = true;
         }
     }
 }
-
-

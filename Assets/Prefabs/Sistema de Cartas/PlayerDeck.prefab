@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 930643682452477759}
   - component: {fileID: 5524850905810905931}
-  - component: {fileID: 5353390335197644712}
   m_Layer: 0
   m_Name: PlayerDeck
   m_TagString: Untagged
@@ -327,38 +326,3 @@ MonoBehaviour:
     cardDescription: 
     spriteImage: {fileID: 0}
   x: 0
-  container: []
-  DrawPileCard1: {fileID: 0}
-  DrawPileCard2: {fileID: 0}
-  DrawPileCard3: {fileID: 0}
-  DrawPileCard4: {fileID: 0}
-  DrawPileCard5: {fileID: 0}
-  CardToHand: {fileID: 0}
-  Clones: []
-  Hand: {fileID: 0}
---- !u!114 &5353390335197644712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475857518442228541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 814b09c71a335c44291869e869d8ae04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 8330684809988207669, guid: f87ac7af80983684ab7868a09ee658c3, type: 3}
-  cardSlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  slotButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  buttonPanel: {fileID: 0}

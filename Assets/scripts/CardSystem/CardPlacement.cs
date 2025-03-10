@@ -56,16 +56,16 @@ public class CardPlacement : MonoBehaviour
         Card card = displayCard.displayCard[0]; // Access the Card object from the Display_Card
         int cardCost = card.cost; // Access the cost from the Card object
         
-        if (turnSystem.PlayCard(card)) { // Check if the card can be played
+        // if (turnSystem.PlayCard(card)) { // Check if the card can be played
 
-            selectedCard.transform.SetParent(slots[index].transform);
-            selectedCard.transform.position = slots[index].transform.position; // Move the card to the slot's position
-            selectedCard.tag = "Placed"; // Change the tag to "Placed"
-            selectedCard.transform.localScale = new Vector3(slots[index].transform.localScale.x, slots[index].transform.localScale.y, -0.12f); // Match the scale of the slot and set Z to -0.12
-            selectedCard.transform.rotation = Quaternion.Euler(270, 180, 270); // Set the rotation to (270, 180, 270)
-        } else {
-            Debug.Log("Not enough mana to place this card!"); // Log message if not enough mana
-        }
+        //     selectedCard.transform.SetParent(slots[index].transform);
+        //     selectedCard.transform.position = slots[index].transform.position; // Move the card to the slot's position
+        //     selectedCard.tag = "Placed"; // Change the tag to "Placed"
+        //     selectedCard.transform.localScale = new Vector3(slots[index].transform.localScale.x, slots[index].transform.localScale.y, -0.12f); // Match the scale of the slot and set Z to -0.12
+        //     selectedCard.transform.rotation = Quaternion.Euler(270, 180, 270); // Set the rotation to (270, 180, 270)
+        // } else {
+        //     Debug.Log("Not enough mana to place this card!"); // Log message if not enough mana
+        // }
 
         canvas.SetActive(false);
     }

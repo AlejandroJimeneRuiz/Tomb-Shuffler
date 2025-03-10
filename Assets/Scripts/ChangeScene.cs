@@ -19,20 +19,12 @@ public class ChangeScene : MonoBehaviour
             jugador = Camera.main.transform;
         }
 
-    private void Update()
+void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("Player")) // Ensure the collider belongs to the player
     {
-        if (Vector3.Distance(jugador.transform.position, transform.position) < distanciaMaxima)
-        {
-            cerca = true;
-        }
-        else
-        {
-            cerca = false;
-        }
-
-        if (cerca == true && Input.GetKey(KeyCode.E))
-        {
-            SceneManager.LoadScene(nombreEscena);
-        }
+        SceneManager.LoadScene(nombreEscena);
     }
+}
+
 }

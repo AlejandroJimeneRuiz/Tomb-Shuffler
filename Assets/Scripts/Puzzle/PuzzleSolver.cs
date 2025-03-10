@@ -9,6 +9,10 @@ public class PuzzleSolver : MonoBehaviour
 
     private bool hasOpened = false;
 
+    public RotateNut[] nuts; // Array de tuercas
+    public int[] requiredRotations; // Número de giros necesarios para cada tuerca
+    public DoorOpener doorOpener; // Referencia al script de la puerta    
+
     void Start()
     {
         // Asegurémonos de que las referencias estén asignadas correctamente
@@ -20,6 +24,19 @@ public class PuzzleSolver : MonoBehaviour
         if (doorAnimation == null)
         {
             Debug.LogError("No se ha asignado la animación de la puerta.");
+        }        
+        
+        if (nuts.Length == 0 || nuts.Length != requiredRotations.Length)
+        {
+            Debug.LogError("Mismatch between nuts and required rotations.");
+            this.enabled = false;
+            return;
+        }
+
+        for (int i = 0; i < nuts.Length; i++)
+        {
+            nuts[i].SetRequiredRotation(requiredRotations[i]);
+            Debug.Log($"Nut {i} requires {requiredRotations[i]} rotations.");
         }
     }
 
@@ -47,6 +64,29 @@ public class PuzzleSolver : MonoBehaviour
             hasOpened = true;
         }
     }
+
+
+    void Update()
+    {
+        if (IsPuzzleSolved())
+        {
+            doorOpener.OpenDoors();
+            this.enabled = false; // Desactiva este script para evitar múltiples aperturas
+        }
+    }
+
+    bool IsPuzzleSolved()
+    {
+        for (int i = 0; i < nuts.Length; i++)
+        {
+            if (nuts[i].GetCurrentRotation() != nuts[i].GetRequiredRotation())
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
 
 

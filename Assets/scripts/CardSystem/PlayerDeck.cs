@@ -88,13 +88,18 @@ public class PlayerDeck : MonoBehaviour
         }
 
     }
+
     IEnumerator StartGame()
     {
-        for (int i = 0; i < 5; i++)
+        float offset = 0.5f; // Adjust this value to change the spacing between cards
+        int totalCards = 5; // Total number of cards to instantiate
+        Vector3 startPosition = Hand.transform.position - new Vector3((totalCards - 1) * offset / 2, 0, 0); // Centering the cards
+
+        for (int i = 0; i < totalCards; i++)
         {
             yield return new WaitForSeconds(1);
-            Instantiate(CardToHand, Hand.transform.position, CardToHand.transform.rotation, Hand.transform);
-            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            Vector3 cardPosition = startPosition + new Vector3(i * offset, 0, 0); // Adjust the x position
+            Instantiate(CardToHand, cardPosition, Hand.transform.rotation);
         }
     }
 
@@ -103,7 +108,7 @@ public class PlayerDeck : MonoBehaviour
         for (int i = 0; i < x; i++)
         {
             yield return new WaitForSeconds(1);
-            Instantiate(CardToHand, Hand.transform.position, CardToHand.transform.rotation, Hand.transform);
+            Instantiate(CardToHand, Hand.transform.position, Hand.transform.rotation);
         }
     }
 }
