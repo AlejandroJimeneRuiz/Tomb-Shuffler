@@ -8,6 +8,7 @@ public class OpenChest : MonoBehaviour
     private bool playerNearby = false;
     private bool hasOpened = false; // Nueva variable para evitar repetir la animación
 
+
     // Start is called before the first frame update
     void Start()
     {
