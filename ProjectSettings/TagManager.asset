@@ -5,7 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Clone
-  - Ground
+  - Placed
+  - Dead
+  - CardDataLoad
+  - EnemyDead
+  - PlayerDead
+  - EnemyCard
+  - EnemyCardPlaced
   layers:
   - Default
   - TransparentFX

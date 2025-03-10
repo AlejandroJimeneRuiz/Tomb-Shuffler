@@ -33,8 +33,7 @@ public class Display_Card : MonoBehaviour
     void Start()
     {
         numberOfCardsInDeck = PlayerDeck.deckSize;
-        
-
+        displayId = id;
         displayCard[0] = Card_DataBase.cardList[displayId];
 
         
@@ -60,12 +59,12 @@ public class Display_Card : MonoBehaviour
         artImage.sprite = spriteImage;
 
         Hand = GameObject.Find("Hand");
-        if (this.tag == "Clone")
+        if (this.tag == "CardDataLoad")
         {
             displayCard[0] = PlayerDeck.staticDeck[numberOfCardsInDeck -1];
             numberOfCardsInDeck-= 1;
             PlayerDeck.deckSize -= 1;
-            this.tag = "Untagged";
+            this.tag = "Clone";
         }
     }
 }
