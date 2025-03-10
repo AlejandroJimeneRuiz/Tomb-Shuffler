@@ -7,6 +7,7 @@ public class Interaction : MonoBehaviour
     public float InteractionDistance = 2f;
     public GameObject InteractionText;
     private interaction_objects currentInteractable;
+    public GameObject cardCanvas;
 
     // Update is called once per frame
     void Update()
@@ -21,6 +22,7 @@ public class Interaction : MonoBehaviour
             { 
                 currentInteractable = interaction_Objects;
                 InteractionText.SetActive(true);
+                cardCanvas.SetActive(true);
                 TextMeshProUGUI textComponent = InteractionText.GetComponent<TextMeshProUGUI>();
                 if (textComponent != null) 
                 {
@@ -33,6 +35,7 @@ public class Interaction : MonoBehaviour
         else
         {
             currentInteractable=null;
+            cardCanvas.SetActive(false);
             InteractionText.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.E))
