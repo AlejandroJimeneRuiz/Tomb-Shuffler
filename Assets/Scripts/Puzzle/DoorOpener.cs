@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class DoorOpener : MonoBehaviour
 {
-    public GameObject[] doors; // Array de puertas (puedes agregar más puertas aquí)
+    public GameObject[] doors; // Array de puertas (puedes agregar mï¿½s puertas aquï¿½)
     private bool[] isOpen; // Estado de apertura para cada puerta
 
-    // Constante para el ángulo de rotación en sentido antihorario
+    // Constante para el ï¿½ngulo de rotaciï¿½n en sentido antihorario
     private const float OpenAngleCounterClockwise = -90f;  // Abre en sentido antihorario
     private const float ClosedAngle = 0f;
     public AudioClip Clip;
@@ -31,12 +31,14 @@ public class DoorOpener : MonoBehaviour
             if (!isOpen[i])
             {
                 OpenDoor(door, i);
+
             }
             else
             {
                 CloseDoor(door, i);
             }
         }
+        AudioSource.PlayClipAtPoint(Clip, this.transform.position);        
     }
 
     private void OpenDoor(GameObject door, int index)
@@ -45,11 +47,10 @@ public class DoorOpener : MonoBehaviour
         if (door.name.Contains("D") || door.name.Contains("i"))
         {
             door.transform.rotation = Quaternion.Euler(0, 0, OpenAngleCounterClockwise);
-            AudioSource.PlayClipAtPoint(Clip, door.transform.position);
         }
-        isOpen[index] = true;
         
-        Debug.Log("La puerta " + door.name + " se ha abierto con rotación: " + door.transform.eulerAngles);
+        isOpen[index] = true;
+        Debug.Log("La puerta " + door.name + " se ha abierto con rotaciï¿½n: " + door.transform.eulerAngles);
     }
 
     private void CloseDoor(GameObject door, int index)
