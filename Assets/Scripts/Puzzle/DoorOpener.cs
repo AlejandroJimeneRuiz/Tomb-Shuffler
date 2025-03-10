@@ -10,6 +10,7 @@ public class DoorOpener : MonoBehaviour
     // Constante para el ángulo de rotación en sentido antihorario
     private const float OpenAngleCounterClockwise = -90f;  // Abre en sentido antihorario
     private const float ClosedAngle = 0f;
+    public AudioClip Clip;
 
     void Start()
     {
@@ -44,8 +45,10 @@ public class DoorOpener : MonoBehaviour
         if (door.name.Contains("D") || door.name.Contains("i"))
         {
             door.transform.rotation = Quaternion.Euler(0, 0, OpenAngleCounterClockwise);
+            AudioSource.PlayClipAtPoint(Clip, door.transform.position);
         }
         isOpen[index] = true;
+        
         Debug.Log("La puerta " + door.name + " se ha abierto con rotación: " + door.transform.eulerAngles);
     }
 
