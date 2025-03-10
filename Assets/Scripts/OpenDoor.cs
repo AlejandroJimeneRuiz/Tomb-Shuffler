@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    public Animation hingehere; 
+    public Animation door;
+    private bool hasPlayed = false; // Variable para controlar si la animación ya se reprodujo
 
     // Start is called before the first frame update
     void Start()
     {
-        if (hingehere == null)
+        if (door == null)
         {
-            hingehere = GetComponent<Animation>(); 
+            door = GetComponent<Animation>();
         }
     }
 
     // Update is called once per frame
     void OnTriggerStay()
     {
-        if (Input.GetKey(KeyCode.E)) 
+        if (Input.GetKey(KeyCode.E) && !hasPlayed)
         {
-            hingehere.Play(); 
+            door.Play();
+            hasPlayed = true; // Marcar la animación como reproducida
         }
     }
 }
+
+
